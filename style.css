@@ -1,0 +1,31 @@
+.grid_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "timeline timeline timeline"
+        "menu2 workplace workplace"
+        "theories theories theories";
+    width: 100px;
+    margin: auto;
+}
+
+.timeline{
+    background-color: blueviolet;
+    grid-area: timeline;
+}
+
+.menu{
+    background-color: aqua;
+    grid-area: menu2;
+}
+
+.workplace{
+    background-color: chartreuse;
+    grid-area: workplace;
+}
+
+.theories{
+    background-color: cornsilk;
+    grid-area: theories;
+}
