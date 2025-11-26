@@ -1,31 +1,79 @@
-.grid_container{
+body{
+    background-color: black;
+}
+
+.grid-container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-columns: 1fr 5fr;
     grid-template-areas:
-        "timeline timeline timeline"
-        "menu2 workplace workplace"
-        "theories theories theories";
-    width: 100px;
+        "timeline timeline"
+        "menu2 workplace";
+    width: 100%;
     margin: auto;
+    row-gap: 10px;
 }
 
 .timeline{
-    background-color: blueviolet;
+    background-color: rgba(200, 200, 200, 30%);
+    border-radius: 5px;
+    border: 5px rgba(255, 255, 255, 30%) solid;
     grid-area: timeline;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    color: white;
 }
 
 .menu{
-    background-color: aqua;
+    background-color: rgba(200, 200, 200, 10%);
+    border-radius: 5px;
+    border: 5px rgba(255, 255, 255, 10%) solid;
     grid-area: menu2;
+    height: min-content;
+    padding: 5px;
+    color: white;
 }
 
 .workplace{
     background-color: chartreuse;
     grid-area: workplace;
+    height: 400px;
 }
 
-.theories{
-    background-color: cornsilk;
-    grid-area: theories;
+.ages{
+    width: 12.5%;
+    font-size: 100%;
+    text-align: center;
+}
+
+.ages div:first-child{
+    height: 45%;
+    margin-top: 10px;
+}
+
+.square{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 15px;
+    height: 15px;
+    rotate: 45deg;
+    background-color: green;
+    border: 5px white solid;
+}
+
+.lineseg{
+    height: 5px;
+    width: 100%;
+    float: initial;
+    margin-top: -15px;
+    background-color: aliceblue;
+}
+
+.first-lineseg{
+    height: 5px;
+    width: 50%;
+    float: right;
+    margin-top: -15px;
+    background-color: aliceblue;
 }
