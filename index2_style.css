@@ -1,0 +1,27 @@
+body{
+    background-image: url(U2.png);
+}
+
+.background{
+    z-index: -1;
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(U3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: fadein;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-play-state: running;
+}
+
+@keyframes fadein{
+    0% {width: 0%; height: 0%;}
+    100% {width: 100%; height: 100%;}
+}
