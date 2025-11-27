@@ -1,3 +1,10 @@
+body{
+    background-image: url(U1.png);
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+
+
 .grid-container{
     display: grid;
     grid-template-columns: 1fr 5fr;
@@ -7,6 +14,7 @@
     width: 100%;
     margin: auto;
     row-gap: 10px;
+    column-gap: 10px;
 }
 
 .timeline{
@@ -17,22 +25,26 @@
     height: 100px;
     display: flex;
     flex-direction: row;
-    color: white;
 }
 
 .menu{
-    background-color: rgba(200, 200, 200, 10%);
+    background-color: rgba(200, 200, 200, 30%);
     border-radius: 5px;
-    border: 5px rgba(255, 255, 255, 10%) solid;
+    border: 5px rgba(255, 255, 255, 30%) solid;
     grid-area: menu2;
     height: min-content;
+    line-height: 150%;
     padding: 5px;
     color: white;
 }
 
-.workplace{
+.workspace{
     grid-area: workplace;
-    height: 400px;
+    height: 200px;
+    border-radius: 5px;
+    border: 5px rgb(200, 200, 200) solid;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .ages{
@@ -80,17 +92,58 @@
     background-color: white;
 }
 
-body{
-    background-color: black;
-}
-
 a{
     color: white;
     text-decoration: none;
 }
 
-@media screen and (maxwidth: 800px) {
+.background{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+@media screen and (max-width: 1000px) {
+    .timeline{
+        flex-direction: column;
+        height: 800px;
+        background-color: rgba(0, 0, 0, 0);
+        border: 0;
+        align-items: center;
+        width: 100px;
+    }
+    .lineseg, .first-lineseg{
+        visibility: hidden;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "timeline"
+            "menu2"
+            "workplace";
+        width: 100%;
+        margin: auto;
+        row-gap: 5px;
+    }
     .ages{
-        visibility: hidden;    
+        text-align: center;
+        margin-top: 20px;
+    }
+    .square{
+        margin-top: 10px;
+    }
+    .workspace{
+        border: none;
+        background-size: 0%;
+    }
+    .background{
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 }
