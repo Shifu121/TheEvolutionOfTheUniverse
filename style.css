@@ -88,3 +88,9 @@ a{
     color: white;
     text-decoration: none;
 }
+
+@media screen and (maxwidth: 800px) {
+    .ages{
+        visibility: hidden;    
+    }
+}
