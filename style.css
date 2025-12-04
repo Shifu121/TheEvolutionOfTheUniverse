@@ -40,7 +40,7 @@ body{
 
 .workspace{
     grid-area: workplace;
-    height: 600px;
+    height: 550px;
     border-radius: 5px;
     border: 5px rgb(200, 200, 200) solid;
     background-size: cover;
@@ -149,3 +149,4 @@ a{
     }
 
 }
+
