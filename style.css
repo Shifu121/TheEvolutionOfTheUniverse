@@ -108,7 +108,7 @@ a{
     right: 0;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
     .timeline{
         flex-direction: column;
         height: fit-content;
