@@ -111,11 +111,12 @@ a{
 @media screen and (max-width: 1000px) {
     .timeline{
         flex-direction: column;
-        height: 800px;
+        height: fit-content;
         background-color: rgba(0, 0, 0, 0);
         border: 0;
         align-items: center;
         width: 100%;
+        margin-bottom: 50px;
     }
     .lineseg, .first-lineseg{
         visibility: hidden;
@@ -142,11 +143,17 @@ a{
     .workspace{
         border: none;
         background-size: 0%;
-        height: 200px
+        height: 400px;
     }
     .background{
         background-size: contain;
         background-repeat: no-repeat;
     }
 
+}
+
+@media screen and (max-width: 600px) {
+    .workspace{
+        height: 200px;
+    }
 }
